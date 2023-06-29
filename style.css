@@ -1,0 +1,178 @@
+/* @media screen and (max-width: 600px)
+{ */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(248, 192, 101);
+
+}
+a{
+    text-decoration: none;
+}
+#main-header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(174, 59, 18);
+    padding: 0 20px;
+    font-weight: bold;
+    color: antiquewhite;
+    text-transform: uppercase;
+    padding: 0 5%;
+}
+#main-header ul{
+ list-style: none;
+ display: flex;
+ margin: 0;
+ padding: 0;
+}
+#main-header li{
+    margin: 0 1rem;
+}
+#main-header nav a{
+    color: white;
+    font-size: 20px;
+}
+#main-header nav a:hover{
+ color: rgb(75, 175, 13);
+}
+
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 190, 125);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#side-drawer header{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: brown;
+    padding: 0 5%;
+}
+ #side-drawer:target{
+    display: block; 
+}
+
+#side-drawer ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 4rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#side-drawer li{
+    margin: 1rem 0;
+}
+    
+
+#side-drawer a{
+    color: rgb(98, 35, 3);
+    font-size: 2rem;
+}
+
+header strong{
+    color: rgb(255, 255, 0);
+    size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: rgb(10, 53, 10) 1px 2px;
+    
+}
+main h1{
+    text-align: center;
+    color: rgb(246, 232, 161);
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: #ffff00 1px 1px;
+}
+#latest-products{
+    width: 80%;
+    margin: 50px auto;
+}
+#latest-products ul{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+     margin: 0;
+     padding: 0;
+}
+.food-items{
+    background-color: rgb(252, 147, 27);
+    border-radius: 6px;
+    overflow: hidden;
+    list-style: none;
+}
+.food-items img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.food-item-content {
+    /* padding: 16px; */
+    padding: 10%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(49, 6, 6);
+}
+h2{
+    font-size: 100%;
+}
+.food-item h2{
+    margin: 0 0  0 1rem 0;
+}
+.menu-btn{
+   width: 3rem;
+   height: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   display: none;
+
+}
+.menu-btn span{
+    /* display: block; */
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.btn{
+    background-color:rgb(169, 53, 32);
+    color: yellow;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px 24px;
+}
+.btn:hover{
+    background-color: orangered;
+}
+@media (max-width: 48rem) {
+    #main-header nav{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    
+    main h1{
+        font-size: 1.5rem;        
+    
+    }
+   #latest-products ul
+   {
+    grid-template-columns: 100%;
+   }
+
+   /* main h1{
+
+   } */
+}
